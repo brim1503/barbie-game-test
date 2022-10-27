@@ -23,8 +23,6 @@ public class ButtonBehaviour : MonoBehaviour
 
     void Update()
     {
-
-        errorText.SetActive(displaySymbolError);
     }
 
     void OnSubmit()
@@ -39,6 +37,7 @@ public class ButtonBehaviour : MonoBehaviour
             displaySymbolError = true;
         }
         errorText.SetActive(displaySymbolError);
-        Debug.Log("inputfield text:" + input);
+        inputField.Select();
+        inputField.text = "";
     }
 }
