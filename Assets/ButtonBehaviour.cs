@@ -28,7 +28,7 @@ public class ButtonBehaviour : MonoBehaviour
     void OnSubmit()
     {
         string input = inputField.text;
-        if (Regex.IsMatch(input, "^[a-zA-Z0-9]*$"))
+        if (Regex.IsMatch(input, "^[a-zA-Z0-9 ]*$"))
         {
             displaySymbolError = false;
         }
